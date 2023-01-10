@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature id="one.mamie.rowm.feature">
+      <category name="one.mamie.rowm"/>
+   </feature>
+   <category-def name="one.mamie.rowm" label="Rowm"/>
+</site>

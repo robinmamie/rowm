@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: EAP
+Bundle-SymbolicName: one.mamie.rowm.eap;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Robin Mamié
+Require-Bundle: javax.inject,
+ org.eclipse.core.runtime,
+ org.eclipse.swt,
+ org.eclipse.e4.ui.model.workbench,
+ org.eclipse.jface,
+ org.eclipse.e4.ui.services,
+ org.eclipse.e4.ui.workbench,
+ org.eclipse.e4.core.di,
+ org.eclipse.e4.ui.di,
+ org.eclipse.e4.core.contexts,
+ org.eclipse.e4.ui.workbench.renderers.swt,
+ org.eclipse.equinox.simpleconfigurator
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Import-Package: javax.annotation;version="0.0.0"
+Automatic-Module-Name: one.mamie.rowm.eap
