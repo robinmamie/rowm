@@ -8,13 +8,24 @@
 	<packaging>pom</packaging>
 	<description>Parent project for the E4 build of Robin's Wrestling manager</description>
 	<properties>
-		<tycho-version>3.0.1</tycho-version>
 		<target-artifact>one.mamie.rowm.tp</target-artifact>
+
+		<tycho-version>3.0.1</tycho-version>
 		<target-version>4.26.0</target-version>
-		<java-version>JavaSE-17</java-version>
+		<java-version>17</java-version>
+		<java-vendor>temurin</java-vendor>
+		<maven-toolchain-plugin-version>3.1.0</maven-toolchain-plugin-version>
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+
+	<modules>
+		<module>one.mamie.rowm.tp</module>
+		<module>one.mamie.rowm.eap</module>
+		<module>one.mamie.rowm.feature</module>
+		<module>one.mamie.rowm.repository</module>
+	</modules>
+
 	<build>
 		<plugins>
 			<plugin>
@@ -57,7 +68,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-toolchains-plugin</artifactId>
-				<version>1.1</version>
+				<version>${maven-toolchain-plugin-version}</version>
 				<executions>
 					<execution>
 						<goals>
@@ -69,18 +80,12 @@
 					<toolchains>
 						<jdk>
 							<version>${java-version}</version>
-							<vendor>openjdk</vendor>
+							<vendor>${java-vendor}</vendor>
 						</jdk>
 					</toolchains>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
-	<!-- the modules that should be built together -->
-	<modules>
-		<module>one.mamie.rowm.tp</module>
-		<module>one.mamie.rowm.eap</module>
-		<module>one.mamie.rowm.feature</module>
-		<module>one.mamie.rowm.repository</module>
-	</modules>
+
 </project>
