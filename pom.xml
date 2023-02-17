@@ -10,13 +10,13 @@
 	<properties>
 		<target-artifact>one.mamie.rowm.tp</target-artifact>
 
-		<tycho-version>3.0.1</tycho-version>
-		<target-version>4.26.0</target-version>
 		<java-version>17</java-version>
 		<java-vendor>temurin</java-vendor>
-		<maven-toolchain-plugin-version>3.1.0</maven-toolchain-plugin-version>
-
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+		<tycho-version>3.0.2</tycho-version>
+		<target-version>4.26.0</target-version>
+		<maven-toolchain-plugin-version>3.1.0</maven-toolchain-plugin-version>
 	</properties>
 
 	<modules>
@@ -87,5 +87,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
